@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400+200&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    position: relative;  
+    height: 100vh;
+    /* overflow-y: hidden; */
+}
+.vechicle-table{
+    margin-top: 40px;
+    border-top: 1px solid #dee5ff;
+}
+.table-head{
+    margin-top: 30px;
+}
+img{
+    height: auto;
+    max-width: 100%;
+}
+.navbar{
+    background-color: rgb(233 237 255) !important;
+}
+.navbar-light .navbar-brand{
+    padding: 0;
+}
+.navbar-brand img{
+    width: 65px;
+}
+.thumbnail-header{
+    background: #434a6c;
+    padding: 8px;
+    border-radius: 4px;
+}
+.thumbnail-header h3{
+    font-size: 18px;
+    margin-bottom: 0;
+    color: #fff;
+    font-weight: normal;
+    text-align: center;
+}
+.traffic-section{
+    margin-top: 15px;
+}
+.video-thumbnail{
+    box-shadow: 0 0 10px #00000024;
+    border-radius: 8px;
+    border: 1px solid #ece7e7;
+    padding: 8px;
+    cursor: pointer;
+    background: #eff2ff;
+}
+.video-thumbnail+.video-thumbnail{
+    margin-top: 15px;
+}
+.vid_avatar{
+    margin-bottom: 8px;
+}
+.vid_avatar img{
+    width: 100%;
+}
+.detail-wrap{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; 
+}
+.vechile-text +.vechile-text{
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+.vechile-text h3{
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+.vechile-text p{
+    font-size: 15px; 
+    margin-bottom: 0;
+}
+.thumbnail-wrap{
+    height: calc(100vh - 115px);
+    padding-bottom: 15px;
+    overflow: auto;
+    padding-right: 8px;
+}
+#vechile_img img{
+    width: 100%;
+}
+.video_frame >img{
+    width: 100%;
+    height: 100%;
+    max-height: 500px;
+    object-fit: cover;
+}
+.vechile-card{
+    padding: 15px;
+    background-color: #dee5ff;
+    position: relative;
+    z-index: 99;
+}
+.modal-header{
+    position: relative;
+    z-index: 99;
+    background-color: #dee5ff;
+    border-bottom: 1px solid #000000;
+}
+#vechile-info .modal-body{
+    padding: 0;
+}
+@media(max-width: 992px){
+    .video_frame >img{
+        max-height: 350px;
+    }
+}
+
+@media(max-width: 767px){
+    .video_frame >img{
+        max-height: 250px;
+    }
+}
