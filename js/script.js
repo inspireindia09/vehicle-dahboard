@@ -115,7 +115,7 @@ $(document).ready(function () {
                 "salary": "$320,800",
                 "start_date": "2011/04/25",
                 "office": "Edinburgh",
-                "extn": "5421"
+                "extn": "5421", 
             }
         ]
  
@@ -130,7 +130,8 @@ $(document).ready(function () {
             { "data": "office" },
             { "data": "extn" },
             { "data": "start_date" },
-            { "data": "salary" }
+            { "data": "salary" },
+            { "data": "action" }
         ],
         dom: 'Bfrtip',
         buttons: [
@@ -139,6 +140,11 @@ $(document).ready(function () {
     });
     setInterval(function() {  
         table.ajax.reload(); 
-    }, 4000 ); 
+    }, 1000 ); 
 
+    //getting table img  
+        $(document).on('click','.table_view', function(){
+            let vehicle_img = $(this).parents('tr').find('td:nth-child(2)').text();
+            $('#passing_vechile_img img').attr('src', vehicle_img);
+        })  
 });
